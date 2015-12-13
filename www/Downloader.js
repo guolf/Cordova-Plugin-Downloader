@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-downloader.Downloader", function(require, exports, module) { var exec = require('cordova/exec');
+var exec = require('cordova/exec');
 
 module.exports = {
     downloadFile : function(fileUrl, params, win, fail) {
@@ -8,5 +8,3 @@ module.exports = {
     	exec(win, fail, "Downloader", "downloadAndOpenFile", [fileUrl, params]);
     }
 };
-
-});
