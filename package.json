@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-PgProgressDialog",
+  "version": "1.0.0",
+  "description": "cordova plugin for downloader",
+  "cordova": {
+    "id": "cordova-plugin-downloader",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guolf/Cordova-Plugin-Downloader.git"
+  },
+  "keywords": [
+    "downloader",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "guolf <guolingfa@gmail.com> (https://github.com/guolf)",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/guolf/Cordova-Plugin-Downloader/issues"
+  },
+  "homepage": "https://github.com/guolf/Cordova-Plugin-Downloader#readme"
+}

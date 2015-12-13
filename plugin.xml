@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-downloader"
+        version="1.0.0">
+
+  <name>Downloader</name>
+
+  <description>
+    Downloader
+  </description>
+
+  <author>guolf</author>
+
+  <license>Apache 2.0</license>
+
+  <keywords>Phoengap,Cordova,Downloader</keywords>
+
+  <repo>https://github.com/guolf/Cordova-Plugin-Downloader.git</repo>
+
+  <issue>https://github.com/guolf/Cordova-Plugin-Downloader/issues</issue>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <js-module src="www/Downloader.js" name="Downloader">
+    <clobbers target="window.plugins.Downloader" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Downloader">
+        <param name="android-package" value="cn.guolf.cordova.plugins.Downloader" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/Downloader.java" target-dir="src/cn/guolf/cordova/plugins"/>
+    <source-file src="src/android/IntentFactory.java" target-dir="src/cn/guolf/cordova/plugins"/>
+  </platform>
+  
+</plugin>
